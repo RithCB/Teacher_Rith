@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Show Image on Button Click</title>
+  <style>
+    #myImage {
+      display: none; /* Hide the image by default */
+      margin-top: 20px;
+      max-width: 300px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Click the button to reveal the image!</h2>
+  
+  <button onclick="showImage()">Show Image</button>
+  
+  <br>
+  <img id="myImage" src="image/My_math_teacher.jpg" alt="Surprise!">
+
+  <script>
+    function showImage() {
+      document.getElementById("myImage").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
